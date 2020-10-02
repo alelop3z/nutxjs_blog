@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nuxtjs_blog:
+    image: nuxtjs_blog
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+  
+volumes:
+  node_modules:
