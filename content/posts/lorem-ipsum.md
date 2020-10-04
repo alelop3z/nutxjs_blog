@@ -4,6 +4,9 @@ description: 'Aquí una descripción'
 image: 'https://octodex.github.com/images/yaktocat.png'
 published: true
 publish_at: 2020-10-01
+tags: 
+  - vue
+  - javascript
 ---
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)

@@ -1,41 +1,28 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row">
-        <h1 class="text-3xl py-6">{{ index.title }}</h1>
-        <p class="text-xl py-3">{{ index.description }}</p>
-      </div>
-    </div>
-
     <section class="latest-blog-section p-3 p-lg-5">
 			<div class="container">
-				<h2 class="section-title font-weight-bold mb-5">Últimos posts</h2>
+				<h2 class="section-title font-weight-bold mb-5">Posts</h2>
 
 				<div class="row">
 					<div class="col-md-4 mb-5" v-for="(post, index) in posts" :key="index">
             <Post :post="post" />
 					</div>
 				</div>
-
-				<div class="text-center py-3">
-          <nuxt-link to="/blog" title="Ver blog" class="btn btn-primary">
-            Ver más posts
-          </nuxt-link>
-        </div>
-			</div>
+      </div>
 		</section>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ $content }) {
-    const index = await $content('pages/index').fetch();
+  async asyncData ({ $content, params }) {
+    let limit = 12
 
     const posts = await $content("posts")
       .only(["title", "description", "publish_at", "tags", "image", "path"])
-      .limit(6)
       .sortBy('publish_at', 'desc')
+      .limit(limit)
       .where({
         published: true
       })
@@ -45,7 +32,6 @@ export default {
       });
 
     return {
-      index, 
       posts
     }
   }

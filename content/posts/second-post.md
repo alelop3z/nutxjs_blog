@@ -4,6 +4,9 @@ description: A'quí una descripción del segundo post'
 image: 'https://octodex.github.com/images/yaktocat.png'
 published: true
 publish_at: 2020-09-28
+tags: 
+  - nuxtjs
+  - javascript
 ---
 
 ### HOME

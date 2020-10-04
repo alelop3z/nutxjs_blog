@@ -11,20 +11,23 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/44a4a5d87e.js', crossorigin: 'anonymous' }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/stylesheets/bootstrap.min.css',
-    '@/assets/stylesheets/style.css',
-    '@/assets/stylesheets/theme.css',
+    // '@/assets/stylesheets/bootstrap.min.css',
+    '@/assets/stylesheets/application.css',
+    '@/assets/stylesheets/style.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -44,6 +47,18 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push(
+        {
+          name: '404',
+          path: '*',
+          component: resolve(__dirname, 'pages/404.vue')
+        }
+      )
+    }
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
