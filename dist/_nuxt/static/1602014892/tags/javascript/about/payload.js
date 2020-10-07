@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/javascript/about", {data:[{}],fetch:[],mutations:void 0});

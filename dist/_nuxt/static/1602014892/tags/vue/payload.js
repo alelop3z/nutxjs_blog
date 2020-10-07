@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/vue", (function(a){return {data:[{posts:[{title:"Este es el título de tu contenido",description:"Aquí una descripción",image:"https:\u002F\u002Foctodex.github.com\u002Fimages\u002Fyaktocat.png",publish_at:"2020-10-01T00:00:00.000Z",tags:[a,"javascript"],path:"\u002Fposts\u002Florem-ipsum"}],slug:a}],fetch:[],mutations:void 0}}("vue")));

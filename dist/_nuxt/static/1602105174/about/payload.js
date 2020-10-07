@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/about", (function(a){return {data:[{about:{toc:[],body:{type:"root",children:[]},dir:"\u002Fpages",path:"\u002Fpages\u002Fabout",extension:".md",slug:"about",createdAt:a,updatedAt:a}}],fetch:[],mutations:void 0}}("2020-10-07T20:44:23.517Z")));

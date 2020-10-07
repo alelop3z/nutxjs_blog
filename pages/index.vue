@@ -1,9 +1,24 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row">
-        <h1 class="text-3xl py-6">{{ index.title }}</h1>
-        <p class="text-xl py-3">{{ index.description }}</p>
+    <div class="about-me-section p-3 p-lg-5">
+      <div class="container">
+        <div class="profile-teaser media flex-column flex-lg-row">
+          <div class="media-body">
+            <h2 class="name font-weight-bold mb-1">{{ index.title }}</h2>
+            <div class="tagline mb-3">{{ index.subtitle }}</div>
+            <div class="bio mb-4">
+              <nuxt-content :document="index" />
+            </div><!--//bio-->
+
+            <div class="mb-4">
+              <nuxt-link class="btn btn-secondary mb-3" to="/cv" title="Mi CV">
+                <span class="d-none d-md-inline">Ver </span> CV
+              </nuxt-link>
+            </div>
+          </div><!--//media-body-->
+
+          <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="assets/images/profile-lg.jpg" alt="">
+        </div>
       </div>
     </div>
 

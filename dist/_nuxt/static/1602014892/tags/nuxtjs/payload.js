@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/nuxtjs", (function(a){return {data:[{posts:[{title:"Este es el segundo post",description:"A'quí una descripción del segundo post'",image:"https:\u002F\u002Foctodex.github.com\u002Fimages\u002Fyaktocat.png",publish_at:"2020-09-28T00:00:00.000Z",tags:[a,"javascript"],path:"\u002Fposts\u002Fsecond-post"}],slug:a}],fetch:[],mutations:void 0}}("nuxtjs")));

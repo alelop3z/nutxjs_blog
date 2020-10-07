@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tags/about", {data:[{posts:[],slug:"about"}],fetch:[],mutations:void 0});

@@ -1,12 +1,18 @@
 <template>
-  <div>
-    <h1 class="my-8 max-w-full m-auto text-3xl text-center font-medium">{{ post.title }}</h1>
-    <h3 class="py-4 text-center uppercase">{{ post.description }}</h3>
-    <nuxt-content :document="post" class="leading-loose" />
-    
-    <div v-if="prev">PREV: {{ prev.title }}</div>
-    <div v-if="next">NEXT: {{ next.title }}</div>
-  </div>
+  <article class="blog-post px-3 py-5 p-md-5">
+    <div class="container single-col-max-width">
+      <header class="blog-post-header">
+        <h1 class="title mb-2">{{ post.title }}</h1>
+        <div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">4 comments</a></span></div>
+      </header>
+      
+      <div class="blog-post-body">
+        <nuxt-content :document="post" class="leading-loose" />
+        <div v-if="prev">PREV: {{ prev.title }}</div>
+        <div v-if="next">NEXT: {{ next.title }}</div>
+      </div>
+    </div>
+  </article>
 </template>
 
 <script>

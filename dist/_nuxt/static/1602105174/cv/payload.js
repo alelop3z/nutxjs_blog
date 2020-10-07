@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cv", {data:[{cv:{title:"CV",pdf_url:"https:\u002F\u002Fwww.as.com",toc:[],body:{type:"root",children:[]},dir:"\u002Fpages",path:"\u002Fpages\u002Fcv",extension:".md",slug:"cv",createdAt:"2020-10-07T20:44:19.967Z",updatedAt:"2020-10-07T21:02:03.612Z"}}],fetch:[],mutations:void 0});

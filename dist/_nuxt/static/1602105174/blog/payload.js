@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/blog", {data:[{posts:[{title:"Hello World",description:"Bienvenidos a un nuevo blog de tecnología donde haré un recopilatorio de pequeños tips y trucos",image:"https:\u002F\u002Foctodex.github.com\u002Fimages\u002Fyaktocat.png",publish_at:"2020-10-06T00:00:00.000Z",path:"\u002Fposts\u002Fhello-world"}]}],fetch:[],mutations:void 0});

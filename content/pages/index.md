@@ -1,18 +1,8 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Alejandro López
+subtitle: Senior Web Developer
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+Llevo más de 10 años en desarrollo de páginas web y durante ese tiempo he tocado todos los palos dentro de la empresa en la que trabajo. Empecé trabajando en el front con HTML y CSS allá por el 2007 y poco a poco me fueron engañando pasando a trabajar en Ruby on Rails.
 
-## Writing content
-
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
-
-## Fetching content
-
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
-
-## Displaying content
-
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+Actualmente sigo desarrollando la mayor parte de mis trabajos en ese lenguaje y haciendo pequeñas pruebas en Laravel, Python y otros lenguajes de programación en menor medida. Últimamente me siento atraído por el desarrollo en VueJS (https://www.vuejs.org), NuxtJS (https://www.nuxtjs.com) y Javascript en general.
